@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FrameIt",
+  "version": "0.1.0",
+  "description": "Overlay a custom frame on Faceit profile avatars.",
+  "action": {
+    "default_title": "FrameIt",
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.faceit.com/*"],
+      "js": ["src/contentScript.ts"]
+    }
+  ],
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.faceit.com/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "faceit-pix@example.com"
+    }
+  }
+}
