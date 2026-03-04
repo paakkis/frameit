@@ -1,9 +1,10 @@
 # FrameIt Install Guide
 
-## Build + Zip for Release
-1. `npm install`
-2. `npm run pack`
-3. Upload `frameit.zip` to a GitHub Release
+## Build + Zip for Release (GitHub Actions)
+1. Commit and push
+2. Tag a release: `git tag v0.1.0`
+3. Push the tag: `git push origin v0.1.0`
+4. GitHub Actions will build and attach `frameit.zip` to the Release
 
 ## Install from GitHub Release
 1. Download `frameit.zip` from the Release
